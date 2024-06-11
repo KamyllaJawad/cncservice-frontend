@@ -1,37 +1,20 @@
 <template>
-  <NavbarCustom/>
-  <!-- <HeroSection/> -->
-  <AboutSection/>
-  <!-- <ServiceSection/> -->
-  <ServiceSectionTest/>
-  <CustomersSection/>
-  <ContactSection/>
-  <FooterCustom/>
-
+  <div id="app">
+    <NavbarCustom/>
+    <router-view/>
+    <FooterCustom/>
+  </div>
 </template>
 
 <script>
-import NavbarCustom from './components/NavbarCustom.vue'
-import FooterCustom from './components/FooterCustom.vue'
-// import HeroSection from './components/HeroSection.vue'
-import CustomersSection from './components/CustomersSection.vue'
-// import ServiceSection from './components/ServiceSection.vue'
-import ContactSection from './components/ContactSection.vue'
-import AboutSection from './components/AboutSection.vue'
-import ServiceSectionTest from './components/ServiceSectionTest.vue'
-
+import NavbarCustom from './components/NavbarCustom.vue';
+import FooterCustom from './components/FooterCustom.vue';
 
 export default {
   name: 'App',
   components: {
     NavbarCustom,
-    FooterCustom,
-    // HeroSection,
-    CustomersSection,
-    // ServiceSection,
-    ContactSection,
-    AboutSection,
-    ServiceSectionTest
+    FooterCustom
   }
 }
 </script>

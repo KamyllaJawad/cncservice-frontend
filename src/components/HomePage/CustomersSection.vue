@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col-md-8 col-xl-6 text-center mx-auto">
-          <p class="fw-bold text-success mb-2">Representações</p>
+          <p class="fw-bold text-primary mb-2">Representações</p>
           <h2 class="fw-bold">Empresas que fornecemos excelência em nossa prestação de serviços</h2>
         </div>
       </div>
@@ -12,7 +12,7 @@
           <div class="d-flex flex-column align-items-center align-items-sm-start">
             <p class="text-dark bg-body-tertiary border rounded border-0 border-light p-4">{{ company.description }}</p>
             <div class="d-flex">
-              <img class="flex-shrink-0 me-3 fit-cover" :src="require(`../assets/${company.logoSrc}`)" :alt="company.name" :width="company.logoWidth" :height="company.logoHeight">
+              <img class="flex-shrink-0 me-3 fit-cover" :src="require(`../../assets/${company.logoSrc}`)" :alt="company.name" :width="company.logoWidth" :height="company.logoHeight">
               <button @click="showMore(index)" class="btn btn-primary">Saiba Mais</button>
             </div>
           </div>

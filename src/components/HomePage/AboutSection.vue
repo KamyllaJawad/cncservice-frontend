@@ -12,9 +12,9 @@
                   eletrônicos e chão de fábrica para manutenção e retrofitting de máquinas CNC e convencionais.</p>
               </div>
             </div>
-            <div class="col-md-6"><img class="rounded img-fluid w-100 fit-cover"
-                style="min-height: 300px;border-color: rgba(45,45,45,0);"
-                src="../assets/_MG_9460.jpg"></div>
+            <div class="col-md-6">
+              <img class="rounded img-fluid w-100 fit-cover" alt="about" style="min-height: 300px;border-color: rgba(45,45,45,0);" src="../../assets/_MG_9460.jpg">
+            </div>
           </div>
         </div>
       </section>

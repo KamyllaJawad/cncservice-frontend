@@ -1,10 +1,10 @@
 <template>
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg">
     <div class="container" id="navbar">
       <!-- Logo centralizada à esquerda -->
-      <a class="navbar-brand" href="#">
+      <router-link class="navbar-brand" to="/">
         <img src="@/assets/CNC.png" alt="Logo" height="60">
-      </a>
+      </router-link>
 
       <!-- Botão de menu responsivo -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -17,7 +17,7 @@
         <ul class="navbar-nav">
           <!-- Tabs -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre Nós</a>
+            <router-link class="nav-link" to="/about">Sobre Nós</router-link>
           </li>
           <!-- Serviços (Dropdown) -->
           <li class="nav-item dropdown">
@@ -26,7 +26,7 @@
               Serviços
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Produtos</a></li>
+              <li><router-link class="dropdown-item" to="/products">Produtos</router-link></li>
               <li><a class="dropdown-item" href="#">Assistência Técnica</a></li>
               <li><a class="dropdown-item" href="#">Automação Industrial</a></li>
               <li><a class="dropdown-item" href="#">Reforma e Retrofitting</a></li>
@@ -34,10 +34,10 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Representações</a>
+            <router-link class="nav-link" to="/contact">Representações</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <router-link class="nav-link" to="/contact">Contato</router-link>
           </li>
         </ul>
       </div>
@@ -47,18 +47,15 @@
 
 <script>
 export default {
-  // Se necessário, você pode adicionar lógica aqui
 };
 </script>
 
 <style scoped>
-/* Estilos personalizados podem ser adicionados aqui */
+
 .navbar-brand {
   margin-right: auto;
 }
 .navbar {
   background-color: #f8f9fa;
 }
-
-
 </style>
